@@ -112,7 +112,6 @@
   text-align: center;
 }
 
-.top-screen .temperature-weather {}
 
 .temperature-weather .temperature-container {
   position: absolute;
@@ -191,9 +190,7 @@
   width: 200px;
 }
 
-.weather-item .weather-icon {
-  /* margin-right: 20px; */
-}
+
 
 .weather-item .weather-icon i {
   font-size: 30px;
@@ -246,7 +243,6 @@
   font-size: 80px;
 }
 
-.location .location-weather-description {}
 
 .location-weather-description .location-title {
   text-transform: uppercase;
@@ -259,17 +255,12 @@
   font-weight: 900;
 }
 
-.location-weather-description .location-weather {}
 
 .location-weather .main-weather h5 {
   font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
 }
-
-.location-weather .temp h5 {}
-
-.bottom-screen .daily-forecast {}
 
 .daily-forecast-item {
   height: 100%;
@@ -292,7 +283,6 @@
   font-size: 1.2rem;
 }
 
-.daily-forecast-col {}
 
 @keyframes mymove {
   from {
@@ -308,10 +298,6 @@
   }
 }
 
-
-.weather-search-city {
-  overflow-y: auto;
-}
 
 .bg-input-city.bg-img {
   filter: blur(0px);
@@ -341,6 +327,7 @@
   position: absolute;
   text-align: center;
   width: 300px;
+  top: 360px;
   padding: 20px;
   line-height: 30px;
   font-size: 2rem;
@@ -368,6 +355,10 @@
 }
 
 @media only screen and (max-width: 450px) {
+  .search-city-title {
+    font-size: 3.5rem;
+  }
+
   .temperature-container .temperature {
     color: white;
     font-size: 4rem !important;
@@ -468,7 +459,6 @@
   .main-screen {
     width: 100vw;
     height: 100vh;
-    overflow-y: auto;
   }
 
   .top-screen .bg-top-screen img {
@@ -495,7 +485,6 @@
     font-weight: 900;
   }
 
-  .location-weather-description .location-weather {}
 
   .location-weather .main-weather h5 {
     font-size: 0.8rem;
